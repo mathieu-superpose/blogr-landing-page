@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "Overpass-Light";
+  src: url("../src/fonts/Overpass/Overpass-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "Overpass-Bold";
+  src: url("../src/fonts/Overpass/Overpass-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../src/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../src/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../src/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype"); }
+body {
+  font-size: 16px; }
+
+header {
+  background: url("../src/img/bg-pattern-intro.svg");
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(255, 143, 112, 0.9);
+  background-position: center;
+  overflow: hidden;
+  border-radius: 0 0 0 60px;
+  min-height: 40vh;
+  color: white;
+  padding: 2em 5em 5em;
+  font-family: "Ubuntu-Regular"; }
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between; }
+
+.navbar_left, .navbar_right {
+  display: flex;
+  align-items: center; }
+  .navbar_left .product-dropdown,
+  .navbar_left .company-dropdown,
+  .navbar_left .connect-dropdown, .navbar_right .product-dropdown,
+  .navbar_right .company-dropdown,
+  .navbar_right .connect-dropdown {
+    display: none;
+    height: 0; }
+
+.navbar_left {
+  width: 35vw;
+  justify-content: space-between; }
+  .navbar_left__logo {
+    color: white;
+    font-size: 2.1em;
+    margin-right: 2em; }
+  .navbar_left button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-right: 1em;
+    font-size: 0.8em; }
+    .navbar_left button::after {
+      content: url("../src/img/icon-arrow-light.svg");
+      transform: rotate(90deg); }
+
+.navbar_right {
+  width: 20%;
+  justify-content: space-around; }
+  .navbar_right li {
+    font-size: 0.8em; }
+    .navbar_right li .signup {
+      width: 215px;
+      height: 25px;
+      padding: 10px 20px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 25px;
+      border: 2px solid white;
+      background: white;
+      color: #ff3d54; }
+
+.hero {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero h1 {
+    font-size: 3em;
+    margin: 10px; }
+  .hero p {
+    font-size: 0.8em;
+    margin: 10px; }
+  .hero ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px; }
+    .hero ul .start-button, .hero ul .learn-button {
+      width: 115px;
+      height: 25px;
+      margin: 20px;
+      padding: 10px 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 25px;
+      border: 2px solid white; }
+    .hero ul .start-button {
+      background: white;
+      color: #ff3d54; }
+    .hero ul .learn-button {
+      color: white; }
+
+.first-part {
+  padding: 5em;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../src/img/illustration-editor-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 60vw;
+  font-family: "Overpass-Light"; }
+  .first-part h2 {
+    font-family: "Overpass-Bold";
+    font-size: 2.4em;
+    margin-bottom: 4vh; }
+  .first-part__bloc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .first-part__bloc__container {
+      width: 600px;
+      display: flex;
+      flex-direction: column; }
+      .first-part__bloc__container h3 {
+        font-family: "Overpass-Bold";
+        font-size: 1.8em;
+        margin-bottom: 2vh; }
+      .first-part__bloc__container p {
+        margin-bottom: 4vh;
+        font-size: 0.8em; }
+
+.second-part {
+  height: 40vh;
+  border-radius: 0 60px 0 60px;
+  background: url("../src/img/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -160px left -160px;
+  box-shadow: inset 0 0 0 2000px rgba(63, 65, 100, 0.9);
+  filter: contrast(1.5);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .second-part__image-container {
+    width: 50vw; }
+    .second-part__image-container img {
+      position: relative;
+      top: -7vh;
+      left: 5vw;
+      width: 70%;
+      height: auto; }
+  .second-part__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50vw; }
+    .second-part__text-container h3 {
+      font-family: "Overpass-Bold";
+      font-size: 1.8em;
+      width: 30vw;
+      margin-bottom: 2vh; }
+    .second-part__text-container p {
+      font-family: "Overpass-Light";
+      width: 30vw;
+      font-size: 0.8em; }
+
+.third-part {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: url("../src/img/illustration-laptop-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -10vw;
+  background-size: 50vw; }
+  .third-part__container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .third-part__container h3 {
+      font-family: "Overpass-Bold";
+      font-size: 1.8em;
+      width: 30vw;
+      margin-bottom: 2vh; }
+    .third-part__container p {
+      font-family: "Overpass-Light";
+      width: 30vw;
+      margin-bottom: 4vh;
+      font-size: 0.8em; }
+
+footer {
+  padding: 2em 5em 5em;
+  min-height: 17vh;
+  background: #2c2d3f;
+  border-radius: 0 60px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Ubuntu-Regular"; }
+  footer .container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3vh; }
+  footer a {
+    color: white;
+    font-size: 0.8em; }
+  footer li {
+    margin-bottom: 1em; }
+  footer .first {
+    font-family: "Ubuntu-Bold";
+    margin-bottom: 3em; }
+  footer .logo {
+    font-size: 2em; }
+  footer .attribution {
+    position: relative;
+    bottom: -40px;
+    font-size: 11px;
+    text-align: center;
+    align-self: center; }
+  footer .attribution a {
+    color: #3e52a3; }
+
+/*# sourceMappingURL=style.css.map */

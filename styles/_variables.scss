@@ -1,0 +1,61 @@
+// // COLORS
+
+//CTA text
+$light-red-color: hsl(356, 100%, 66%);
+//CTA hover background
+$very-light-red-color: hsl(355, 100%, 74%);
+//headings
+$very-dark-blue-color: hsl(208, 49%, 24%);
+
+//text
+$white-color: hsl(0, 0%, 100%);
+//footer text
+$grayish-blue-color: hsl(240, 2%, 79%);
+//body copy
+$dark-grayish-blue-color: hsl(207, 13%, 34%);
+//footer background
+$dark-black-blue-color: hsl(240, 10%, 16%);
+
+
+//Background gradient - Intro/CTA mobile nav:
+$very-light-red-color: hsl(13, 100%, 72%);
+$light-red-color: hsl(353, 100%, 62%);
+
+//Background gradient - body:
+$very-dark-gray-blue: hsl(237, 17%, 21%);
+$very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+
+// // Typography
+
+$font-size: 16px;
+
+// // Fonts
+
+// - Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+// - Weights: 300, 600
+
+@font-face {
+ font-family: "Overpass-Light";
+ src: url("../src/fonts/Overpass/Overpass-Light.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Overpass-Bold";
+ src: url("../src/fonts/Overpass/Overpass-Bold.ttf") format("truetype");
+}
+
+// - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+// - Weights: 400, 500, 700
+
+@font-face {
+ font-family: "Ubuntu-Light";
+ src: url("../src/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Ubuntu-Regular";
+ src: url("../src/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Ubuntu-Bold";
+ src: url("../src/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+}
