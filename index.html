@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
+    <title>Frontend Mentor | [Blogr]</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="modal">
+                <section class="modal__product">
+                    <button class="modal__product__btn">Product</button>
+                    <ul class="modal__product__content">
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Marketplace</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Integrations</a></li>
+                    </ul>
+                </section>
+                <section class="modal__company">
+                    <button class="modal__company__btn">Company</button>
+                    <ul class="modal__company__content">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </section>
+                <section class="modal__connect">
+                    <button class="modal__connect__btn">Connect</button>
+                    <ul class="modal__connect__content">
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Newsletter</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                    </ul>
+                </section>
+                <section class="modal__links">
+                    <ul class="modal__links__list">
+                        <li class="modal__links__list__loginLink"><a class="modal__links__list__loginLink__login" href="">Login</a></li>
+                        <li class="modal__links__list__signupLink"><a class="modal__links__list__signupLink__signup" href="">Sign Up</a></li>
+                    </ul>
+                </section>
+            </div>
+            <ul class="navbarLeft">
+                <li><a class="navbarLeft__logo" href="">Blogr</a></li>
+                <li class="navbarLeft__productDropdown">
+                    <button class="navbarLeft__productDropdown__button">Product</button>
+                    <ul class="navbarLeft__productDropdown__content">
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Marketplace</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Integrations</a></li>
+                    </ul>
+                </li>
+                <li class="navbarLeft__companyDropdown">
+                    <button class="navbarLeft__companyDropdown__button">Company</button>
+                    <ul class="navbarLeft__companyDropdown__content">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="navbarLeft__connectDropdown">
+                    <button class="navbarLeft__connectDropdown__button">Connect</button>
+                    <ul class="navbarLeft__connectDropdown__content">
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Newsletter</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                    </ul>
+                </li>
+                <li></li>
+            </ul>
+            <ul class="navbarRight">
+                <li class="navbarRight__links"><a class="navbarRight__links__login" href="">Login</a></li>
+                <li class="navbarRight__links"><a class="navbarRight__links__signup" href="">Sign Up</a></li>
+                <button class="navbarRight__burgerBtn">
+                    <img src="./src/img/icon-hamburger.svg"></img>
+                </button>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 class="hero__title">A modern publishing platform</h1>
+            <p class="hero__subtitle">Grow your audience and build your online brand</p>
+            <ul class="hero__buttons">
+                <li><a class="hero__buttons__start-button" href="">Start for Free</a></li>
+                <li><a class="hero__buttons__learn-button" href="">Learn More</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="first-part">
+            <h2 class="first-part__title">Designed for the future</h2>
+            <img class="first-part__image" src="./src/img/illustration-editor-desktop.svg">
+            <div class="first-part__bloc">
+                <div class="first-part__bloc__container">
+                    <h3 class="first-part__bloc__container__title">Introducing an extensible editor</h3>
+                    <p class="first-part__bloc__container__text">
+                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+                        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+                        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+                        change the looks of a blog.
+                    </p>
+                    <h3 class="first-part__bloc__container__title">Robust content management</h3>
+                    <p class="first-part__bloc__container__text">
+                        Flexible content management enables users to easily move through posts. Increase the usability of your blog
+                        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="second-part">
+            <div class="second-part__image-container">
+                <img src="./src/img/illustration-phones.svg" alt="illustration of two smartphones">
+            </div>
+            <div class="second-part__text-container">
+                <h3 class="second-part__text-container__title">State of the Art Infrastructure</h3>
+                <p class="second-part__text-container__text">
+                    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+            </div>
+        </div>
+        <div class="third-part">
+            <div class="third-part__container">
+                <img class="third-part__container__image" src="./src/img/illustration-laptop-desktop.svg">
+                <h3 class="third-part__container__title">Free, open, simple</h3>
+                <p class="third-part__container__text">
+                    Blogr is a free and open source application backed by a large community of helpful developers. It supports
+                    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+                    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                </p>
+                <h3 class="third-part__container__title">Powerful tooling</h3>
+                <p class="third-part__container__text">
+                    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                    capable of producing even the most complicated sites.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <a class="container__logo" href="">Blogr</a>
+            <ul>
+                <li class="container__primary"><a href="">Product</a></li>
+                <li class="container__secondary"><a href="">Overview</a></li>
+                <li class="container__secondary"><a href="">Pricing</a></li>
+                <li class="container__secondary"><a href="">Marketplace</a></li>
+                <li class="container__secondary"><a href="">Features</a></li>
+                <li class="container__secondary"><a href="">Integrations</a></li>
+            </ul>
+            <ul>
+                <li class="container__primary"><a href="">Company</a></li>
+                <li class="container__secondary"><a href="">About</a></li>
+                <li class="container__secondary"><a href="">Team</a></li>
+                <li class="container__secondary"><a href="">Blog</a></li>
+                <li class="container__secondary"><a href="">Careers</a></li>
+            </ul>
+            <ul>
+                <li class="container__primary"><a href="">Connect</a></li>
+                <li class="container__secondary"><a href="">Contact</a></li>
+                <li class="container__secondary"><a href="">Newsletter</a></li>
+                <li class="container__secondary"><a href="">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub/blogr-landing-page-GC3VBCsh0" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Mathieu JOLY</a>.
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
